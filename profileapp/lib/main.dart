@@ -20,29 +20,45 @@ void main() {
                   width: 300,
                 ),
               ),
+              const SizedBox(height: 7),
+              const Text(
+                "Rajendra Acharya",
+                style: TextStyle(
+                    fontSize: 24,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 7),
+              const Text(
+                "Diktel,Khotang",
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 97, 100, 103),
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 7),
+              const Text(
+                "rajendraacharya@gmail.com",
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Color.fromARGB(255, 97, 100, 103),
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 300),
+              const Text(
+                "Developed by rajendra acharya",
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Color.fromARGB(255, 97, 100, 103),
+                    fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height:7),
-              const Text("Rajendra Acharya", style: TextStyle(
-                fontSize: 24, 
-                color:Colors.blue,
-                fontWeight:FontWeight.bold),
-              ),
-            const SizedBox(height:7),
-            const Text("Diktel,Khotang", style: TextStyle(
-                fontSize: 18, 
-                color:Color.fromARGB(255, 97, 100, 103),
-                fontWeight:FontWeight.bold),
-              ),
-              const SizedBox(height:7),
-            const Text("rajendraacharya@gmail.com", style: TextStyle(
-                fontSize: 14, 
-                color:Color.fromARGB(255, 97, 100, 103),
-                fontWeight:FontWeight.bold), 
-              ),
-              const SizedBox(height:300),
-               const Text("Developed by rajendra acharya", style: TextStyle(
-                fontSize: 14, 
-                color:Color.fromARGB(255, 97, 100, 103),
-                fontWeight:FontWeight.bold), 
+              const Text(
+                "powered by apple company",
+                style: TextStyle(
+                    fontSize: 8,
+                    color: Color.fromARGB(255, 97, 100, 103),
+                    fontWeight: FontWeight.bold),
               ),
             ],
           ))));
