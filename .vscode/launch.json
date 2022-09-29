@@ -5,6 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         
+
+        
         {
             "name": "Dart: Run all Tests",
             "type": "dart",
@@ -19,9 +21,7 @@
             "webRoot": "${workspaceFolder}"
         },
         
-        
-
-
+    
         {
             "name": "Dart & Flutter",
             "request": "launch",
