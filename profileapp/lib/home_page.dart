@@ -9,7 +9,8 @@ import 'package:profileapp/custom_dialog.dart';
 import 'game_button.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  String? username;
+  HomePage(this.username, {Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -70,21 +71,20 @@ class _HomePageState extends State<HomePage> {
   }
 
   void autoPlay() {
-    Timer(Duration(seconds: 3), () {
-  var emptyCells = [];
-    var list = List.generate(9, (i) => i + 1);
-    for (var cellId in list) {
-      if (!(player1.contains(cellId) || player2.contains(cellId))) {
-        emptyCells.add(cellId);
+    Timer(Duration(seconds: 5), () {
+      var emptyCells = [];
+      var list = List.generate(9, (i) => i + 1);
+      for (var cellId in list) {
+        if (!(player1.contains(cellId) || player2.contains(cellId))) {
+          emptyCells.add(cellId);
+        }
       }
-    }
-    var r = Random();
-    var randIndex = r.nextInt(emptyCells.length - 1);
-    var cellId = emptyCells[randIndex];
-    int i = buttonList.indexWhere((p) => p.id == cellId);
-    playGame(buttonList[i]);
-});
-   
+      var r = Random();
+      var randIndex = r.nextInt(emptyCells.length - 1);
+      var cellId = emptyCells[randIndex];
+      int i = buttonList.indexWhere((p) => p.id == cellId);
+      playGame(buttonList[i]);
+    });
   }
 
   int checkWinner() {
@@ -146,10 +146,9 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-           const Center(
-            child: SizedBox (height: 20,
-           child: Text("developed By Rajendra")),
-           ),
+          const Center(
+            child: SizedBox(height: 20, child: Text("developed By Rajendra")),
+          ),
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.all(10.0),

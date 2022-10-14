@@ -10,10 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    var materialApp = MaterialApp(
        debugShowCheckedModeBanner:false,
         theme: ThemeData(primaryColor:const Color.fromARGB(255, 43, 26, 198)),
-        home:const HomePage(),
+        home: HomePage(AutofillHints.username),
     );
+    return materialApp;
   }
 }
